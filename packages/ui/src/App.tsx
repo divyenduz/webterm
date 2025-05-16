@@ -64,7 +64,9 @@ function App() {
       const protocol = window.location.protocol === "https:" ? "wss:" : "ws:";
       const host = window.location.hostname || "localhost";
       const wsPort = 5174;
-      const wsUrl = `${protocol}//${host}:${wsPort}`;
+      // Include query parameters from the current URL
+      const queryParams = window.location.search;
+      const wsUrl = `${protocol}//${host}:${wsPort}${queryParams}`;
 
       console.log(`Connecting to WebSocket at ${wsUrl}`);
       const ws = new WebSocket(wsUrl);
