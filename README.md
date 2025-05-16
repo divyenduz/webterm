@@ -61,6 +61,17 @@ The server is running with Node.js and not Bun due to a known issue with Bun cau
 - Cross-platform support (Windows, macOS, Linux)
 - Automatic terminal resizing
 - Connection status indicator
+- Custom working directory via URL parameter (`cwd`)
+
+### Using Custom Working Directory
+
+You can specify a custom working directory for the terminal by using the `cwd` URL parameter:
+
+```
+http://localhost:5173?cwd=/absolute/path/to/your/project
+```
+
+This allows you to start the terminal in any directory on your system, making it convenient for working with specific projects.
 
 ## License
 
