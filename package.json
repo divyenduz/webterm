@@ -6,7 +6,5 @@
   "scripts": {
     "dev": "bun run --filter '@webterm/*' dev"
   },
-  "workspaces": ["packages/*"],
-  "dependencies": {},
-  "devDependencies": {}
+  "workspaces": ["packages/*"]
 }
